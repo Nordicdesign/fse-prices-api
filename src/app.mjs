@@ -2,6 +2,7 @@ import 'dotenv/config'
 import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
+import pricesRoute from './routes/prices.mjs'
 
 // import { sendError } from './helpers/sendError'
 // import { protect } from './controllers/auth/helpers/authHelpers'
@@ -22,7 +23,7 @@ app.options('*', cors())
 // app.use('/auth', authRoute)
 
 // app.use('/api', protect)
-app.use('/api')
+app.use('/api', pricesRoute)
 // app.use('/api/recipes', recipesRoute)
 // app.use('/api/plans', plansRoute)
 

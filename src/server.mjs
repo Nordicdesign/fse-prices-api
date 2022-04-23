@@ -1,5 +1,5 @@
 import http from 'http'
-import app from './app'
+import app from './app.mjs'
 const PORT = process.env.PORT || 5000
 
 // designates what port the app will listen to for incoming requests
